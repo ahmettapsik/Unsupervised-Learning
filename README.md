@@ -84,5 +84,108 @@ Her bir veri öncelikle kendine ait bir küme oluşturur. Ardından birbirine en
 
 2-)Divise
 
+Bu yaklaşımda ise tüm veriler öncelikle tek bir küme içerisinde ele alındıktan sonra her bir veri noktası birer küme oluncaya dek bölünme işlemi gerçekleşiyor.
+     
+ 
+ ![Img_43](https://user-images.githubusercontent.com/64674920/207929363-1e38afc6-5966-49e0-b806-88d5e7788d42.jpg)
+
+2B-) Boyut Küçültme Algoritması
+
+Gerçek hayattaki veriler çok fazla boyuta (özniteliğe) sahip oluyor ve boyut büyüdükçe veri temizlemeden model kurmaya bütün süreçlerde harcamamız gereken zaman ve kaynaklar artıyor. Boyut azatma bu sorunun önüne geçmek için kullanılan yöntemlerden biridir. Hemen her veri setinde bazı öznitelikler arasında yüksek korelasyon oluyor ve bu bizim gereksiz bilgiye sahip olmamıza ve modelimizde overfitting problemine sebep olabiliyor.
+
+Boyut Küçültme Nasıl Uygulanır
+
+Boyut küçültmenin en kolay yolu verimizi en iyi tanımlayan öznitelikleri bulup diğerlerini atmaktır (öznitelik seçimi — feature selection). Dikkat edilmesi gereken nokta en az bilgi kaybıyla bu işi yapmaktır ve aslında önemli olan öznitelikleri silmemektir. Bunu yapmak için verideki dağılımın maksimum varyansını-bilgisini tutan minimum sayıda değişken oluşturuyoruz. Eğer bir değişken her örnek için aynı değere sahip ise gereksiz bir değişkendir. Biz en yüksek varyansa sahip olan değişkenleri bulmalıyız.
+
+ 2C-) Pazar Sepeti Analizi 
+ 
+- Pazar sepeti analizi, tüketicilerin satın alma davranışlarının analiz ederek ürünler arasındaki ilişkileri ortaya çıkaran ve şirketlerin büyük ölçekte satış yapmasını amaçlayan bir yöntemdir.
+- Örneğin bir marketten müşterilerin süt ve peynir satın alımlarının %70'inde  bu ürünler ile birlikte yoğurtta satın alınmıştır. Pazar sepeti analizi bu ilişkiyi ortaya çıkarır ve satıcılar buna göre bir satış politikası izlerler.
+- Tüketicilerin satın alma davranışları, alışveriş alışkanlıklarının ve birlikte aldıkları ürünlerin incelenmesiyle elde edilir.
+
+Pazar Sepeti Uygulamaları
+
+2C.1-) Çapraz Satış Yapılması(Cross-Sell):
+
+Bir ürünü satarken, bu ürünü tamamlayacak bir yan ürünü, ürünle beraber tüketiciye sunarak, tüketicinin birden fazla ürünü satın almaya yönlendirecek satış yöntemidir. Tüketicinin, “Sepet” sayfası üzerinde de kullanıcının sepete eklediği ürünle ilgili olabilecek alternatif ürünleri listelenmesi bir çapraz satış örneğidir.
+
+2C.2-) Mağaza Düzeni(Store Layout): 
+Satışları ve geliri artırmak için mağazadaki ürünler pazar sepeti analizine göre düzenlenebilir. 
+ 
+-Pazar sepeti analizine göre ürünler müşterinin dikkatini çekecek ve diğer ürünü satın alma kararına yardımcı olacak şekilde sıralanabilir veya yerleştirilebilir.
+
+-Pazar sepeti analizi, satışların artmasıyla sonuçlanan ürünleri ve kombinasyonları düzenlemek için bir rehber görevi görür.
+
+ ![IC-Store-Layout-Loop](https://user-images.githubusercontent.com/64674920/207938343-eaa84efb-3094-44c6-b366-2237fe7c3851.jpg)
+
+2C.3-) Tavsiye Motorları(Recommendation Engines)
+- Pazar sepeti analizi, tavsiye motorlarını güçlendiren temel ilkedir.
+- Tavsiye sistemleri, kullanıcıların deneyimlerini, davranışlarını, tercihlerini ve ilgi alanlarını kullanarak tüm dijital dünyayı keşfetmelerinin birincil yolu haline geliyor. Bilgi yoğunluğunun ve aşırı ürün alışverişinin olduğu bir dünyada, bir tavsiye motoru, şirketlere tüketicilere kişiselleştirilmiş bilgi ve çözümler sunmanın verimli bir yolunu sunar. 
+
+  ![download](https://user-images.githubusercontent.com/64674920/207940292-d8f9be14-9f1b-4827-9db8-bef7ceb056a6.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ###############################################################
+  
+  
+  
+  
+  KAYNAKÇA
+ - https://samed-harman.medium.com/makine-%C3%B6%C4%9Frenmesi-clustering-k%C3%BCmeleme-teknikleri-bd1b59a0a177 ​
+
+https://medium.com/@gulcanogundur/pca-principal-component-analysis-temel-bile%C5%9Fenler-analizi-bf9098751c62​
+
+https://medium.com/data-science-tr/makine-%C3%B6%C4%9Frenmesi-dersleri-boyut-azaltma-pca-5ae9e902ef92​
+
+https://samed-harman.medium.com/makine-%C3%B6%C4%9Frenmesi-clustering-k%C3%BCmeleme-teknikleri-bd1b59a0a177​
+
+https://erdincuzun.com/makine_ogrenmesi/hiyerarsik-kumeleme-hierarchical-clustering-odev-benzerlikleri-uzerinden-kopya-gruplarini-bulma/​
+
+https://www.btkakademi.gov.tr/portal/course/player/deliver/python-ile-makine-oegrenmesi-11800​
+
+
+https://medium.com/machine-learning-türkiye/adım-adım-makine-öğrenmesi-bölüm-3-denetimsiz-öğrenme-nedir-f890ada49a40​
+
+https://www.ibm.com/cloud/learn/unsupervised-learning#:~:text=Unsupervised%20learning%2C%20also%20known%20as,the%20need%20for%20human%20intervention.​
+
+https://www.expert.ai/blog/machine-learning-definition/​
+
+https://www.neenopal.com/MarketBasketAnalysis.html​
+
+https://www.slideshare.net/uslumetin/birliktelik-kurallar-kullanlarak-pazar-sepeti-analizi-market-basket-analysis-using-association-rules​
+
+https://djinit-ai.github.io/2020/09/22/apriori-algorithm.html​
+
+https://medium.com/@eminenurnacar/veri-madencili%C4%9Finde-pazar-sepeti-analizi-de44962f2086​
+
+https://www.veribilimiokulu.com/associationrulesanalysis/​
+
+https://yavuz.github.io/denetimsiz-ogrenme/ ​
+
+https://www.youtube.com/watch?v=CMbLMiJAx_g ​
+
+https://samed-harman.medium.com/makine-%C3%B6%C4%9Frenmesi-clustering-k%C3%BCmeleme-teknikleri-bd1b59a0a177 ​
+
+https://www.btkakademi.gov.tr/portal/course/player/deliver/python-ile-makine-oegrenmesi-11800​
+  
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
